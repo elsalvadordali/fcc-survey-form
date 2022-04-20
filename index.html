@@ -4,76 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Join Eco Warriors</title>
+    <link href="./style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1 id="h1">Eco warrior registration form</h1>
-    <p id="'description">
-      We're thrilled you're interested in becoming an eco warrior. Please fill
-      out the form below, and we'll get back to you after review. (Not really)
-    </p>
-    <form id="survey-form">
-      <label id="name-label" for="name">Full Name</label>
-      <input type="text" name="name" id="name" placeholder="Hank Hill" />
-      <label id="email-label" for="email">Email</label>
-      <input
-        type="email"
-        name="email"
-        id="email"
-        placeholder="hank.hill@google.com"
-      />
+    <div class="container">
+      <h1 id="title">Eco warrior registration form</h1>
+      <div class="img">
+        <img src="./5828479.png" alt="cartoon image of a woman gardening" />
+      </div>
+      <p id="description">
+        We're thrilled you're interested in becoming an eco warrior. Please fill
+        out the form below, and we'll get back to you after review. (Not really)
+      </p>
+      <form id="survey-form">
+        <div>
+          <label id="name-label" for="name">Full Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Hank Hill"
+            required
+          />
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="hank.hill@google.com"
+            required
+          />
 
-      <label id="number-label" for="age">Age</label>
-      <input
-        type="number"
-        name="age"
-        id="number"
-        placeholder="42"
-        min="18"
-        max="65"
-      />
-
-      <div>
-        <h2>Please select a pledge*</h2>
-        <label for="biking">Commuting via bike</label>
-        <input type="radio" id="biking" name="hobby" value="biking" />
-        <label for="sandwich">Eating chickpea 'tuna' sandwiches</label>
-        <input type="radio" id="sandwich" name="hobby" value="sandwich" />
-        <label for="sandwich">Cleaning up litter at the beach</label>
-        <input type="radio" id="beach" name="hobby" value="beach" />
-      </div>
-      <div>
-        <label for="driving">Driving when I know I could have walked</label>
-        <input type="checkbox" id="driving" name="sin" value="driving" />
-        <label for="amazon"
-          >Ordering something from Amazon when I know I already had it at home,
-          but I was too lazy to find it</label
+          <label id="number-label" for="age">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="42"
+            min="18"
+            max="65"
+          />
+        </div>
+        <div>
+          <h2>Please select a pledge*</h2>
+          <p>
+            When you make a pledge, you do it <u>*for life</u>. We will hold you
+            to it. Please select the pledge you're most willing to commit to
+          </p>
+          <label for="biking">Commuting via bike. Everywhere</label>
+          <input type="radio" id="biking" name="hobby" value="biking" />
+          <label for="sandwich"
+            >Eating <i>only</i> chickpea 'tuna' sandwiches</label
+          >
+          <input type="radio" id="sandwich" name="hobby" value="sandwich" />
+          <label for="sandwich"
+            >Cleaning up litter at the beach. Everyday</label
+          >
+          <input type="radio" id="beach" name="hobby" value="beach" />
+        </div>
+        <div>
+          <h2>Sins you're personally guilty of</h2>
+          <p>
+            We value honestly, but if you have too many transgressions, we
+            <i>will</i> hold it against you.
+          </p>
+          <label for="driving" class="sin-label"
+            >Driving when I know I could have walked</label
+          >
+          <input
+            type="checkbox"
+            id="driving"
+            name="sin"
+            value="driving"
+            class="sin"
+          />
+          <label for="amazon" class="sin-label"
+            >Ordering something from Amazon when I know I already had it at
+            home, but I was too lazy to find it</label
+          >
+          <input
+            type="checkbox"
+            id="amazon"
+            name="sin"
+            value="amazon"
+            class="sin"
+          />
+          <label for="detergent" class="sin-label"
+            >Using liquid detergent</label
+          >
+          <input
+            type="checkbox"
+            id="detergent"
+            name="sin"
+            value="detergent"
+            class="sin"
+          />
+          <label for="cheap" class="sin-label"
+            >Shopping at the dollar store/alibaba</label
+          >
+          <input
+            type="checkbox"
+            id="cheap"
+            name="sin"
+            value="cheap"
+            class="sin"
+          />
+          <label for="vegetables" class="sin-label"
+            >Not eating my vegetables fully knowing there are starving kids in
+            Africa</label
+          >
+          <input
+            type="checkbox"
+            id="vegetables"
+            name="sin"
+            value="vegetables"
+            class="sin"
+          />
+          <label for="school" class="sin-label"
+            >Driving your kid to/from school</label
+          >
+          <input
+            type="checkbox"
+            id="school"
+            name="sin"
+            value="school"
+            class="sin"
+          />
+        </div>
+        <div>
+          <h2>What would you like to participate in?</h2>
+          <select id="dropdown">
+            <option value="””">Vegan potlucks</option>
+            <option value="””">Animal rescue</option>
+            <option value="””">Dumpster diving</option>
+            <option value="””">Planting trees</option>
+          </select>
+        </div>
+        <div>
+          <h2>Plead your case</h2>
+          <h3>Why do you deserve to be an eco warrior?</h3>
+          <textarea></textarea>
+        </div>
+        <div>
+          <dropdown
+        </div>
+        <div>
+          <button type="submit" id="submit">Submit application</button>
+          <p>
+            We will get back to you as soon as we review your application but
+            because we receive thousands upon thousands of application a day,
+            please be patient with us. We usually will get back to you within
+            3-9 days, but if you don't hear from us by then, feel free to apply
+            again.
+          </p>
+        </div>
+      </form>
+      <footer>
+        <a href="https://www.freepik.com/vectors/plant-care"
+          >Image created by freepik</a
         >
-        <input type="checkbox" id="amazon" name="sin" value="amazon" />
-        <label for="detergent">Using liquid detergent</label>
-        <input type="checkbox" id="detergent" name="sin" value="detergent" />
-        <label for="cheap">Shopping at the dollar store/alibaba</label>
-        <input type="checkbox" id="cheap" name="sin" value="cheap" />
-        <label for="vegetables"
-          >Not eating my vegetables fully knowing there are starving kids in
-          Africa</label
-        >
-        <input type="checkbox" id="vegetables" name="sin" value="vegetables" />
-      </div>
-      <div>
-        <h2>Plead your case</h2>
-        <h3>Why do you deserve to be an eco warrior?</h3>
-        <textarea></textarea>
-      </div>
-      <div>
-        <button type="submit">Submit application</button>
-        <p>
-          We will get back to you as soon as we review your application but
-          because we receive thousands upon thousands of application a day,
-          please be patient with us. We usually will get back to you within 3-9
-          days, but if you don't hear from us by then, feel free to apply again.
-        </p>
-      </div>
-    </form>
+      </footer>
+    </div>
   </body>
+  <script>
+    document.addEventListener('click', e => {
+      if (e.target.type === 'checkbox') {
+        let arr = 0
+        let list = document.querySelectorAll('.sin')
+        for (let checkbox of list) {
+          if (checkbox.checked) {
+            arr++
+          }
+        }
+        let ratio = arr / 9
+        let str = `rgba(255, 115, 92, ${ratio})`
+        document.body.style.background = str
+      }
+    })
+  </script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
