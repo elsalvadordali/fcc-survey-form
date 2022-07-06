@@ -1,10 +1,10 @@
-*Free code camp submission for [Legacy Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
-*
+* Free code camp submission for [Legacy Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form) *
+
 
 
 <img alt='screenshot of mostly forms' src='https://raw.githubusercontent.com/elsalvadordali/fcc-survey-form/main/screenshot.png'>
 
-Eco warrior registration form
+# Eco warrior registration form
 Build this to get my certificate, my first attempt at comedy coding.
 Lightly styled, but it passes all tests. 
 
